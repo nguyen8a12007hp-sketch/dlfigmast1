@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Example</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Be Vietnam Pro', sans-serif;
+      font-weight: bold;
+    }
+
+    .container {
+      width: 100%;
+    }
+
+    .wrapper {
+      width: 95%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .site-header,
+    .site-footer {
+      padding: 20px 0;
+      display: flex;
+      align-items: center;
+    }
+
+    .site-header {
+      background-color: #FFFFFF;
+    }
+
+    .site-footer {
+      background-color: #F1F1F1;
+      justify-content: center;
+      display: flex;
+    }
+
+    .site-header .wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .header-logo,
+    .header-menu,
+    .header-button {
+      border-radius: 8px;
+      background-color: #E2E2E2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .header-logo {
+      width: 200px;
+      height: 60px;
+    }
+
+    .header-menu {
+      flex: 1;
+      height: 34px;
+    }
+
+    .header-button {
+      width: 120px;
+      height: 42px;
+    }
+
+    .hero-section,
+    .grid-section,
+    .list-section,
+    .highlight-section {
+      padding: 60px 0;
+    }
+
+    .hero-section,
+    .list-section {
+      background-color: #F1F1F1;
+    }
+
+    .grid-section,
+    .highlight-section {
+      background-color: #FFFFFF;
+    }
+
+    .hero-section .wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .hero-text,
+    .hero-image {
+      border-radius: 8px;
+      background-color: #E2E2E2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hero-text {
+      width: 585px;
+      height: 267px;
+    }
+
+    .hero-image {
+      width: 585px;
+      height: 520px;
+    }
+
+    .content-block {
+      max-width: 1140px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .section-title {
+      width: 600px;
+      height: 64px;
+      margin: 0 auto;
+      border-radius: 8px;
+      background-color: #E2E2E2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .item-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      width: 100%;
+    }
+
+    .grid-card {
+      height: 420px;
+      border-radius: 8px;
+      background-color: #E2E2E2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .item-wrapper {
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+      width: 100%;
+    }
+
+    .list-card,
+    .highlight-card {
+      border-radius: 8px;
+      background-color: #E2E2E2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .list-card {
+      width: 216px;
+      height: 300px;
+    }
+
+    .highlight-card {
+      width: 277.5px;
+      height: 300px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <div class="site-header">
+      <div class="wrapper">
+        <div class="header-logo"><p>Logo</p></div>
+        <div class="header-menu"><p>Menu</p></div>
+        <div class="header-button"><p>Button</p></div>
+      </div>
+    </div>
+
+    <div class="hero-section">
+      <div class="wrapper">
+        <div class="hero-text"><p>Content</p></div>
+        <div class="hero-image"><p>Image</p></div>
+      </div>
+    </div>
+
+    <div class="grid-section">
+      <div class="wrapper">
+        <div class="content-block">
+          <div class="section-title"><p>Title</p></div>
+          <div class="item-grid">
+            <div class="grid-card"><p>Item</p></div>
+            <div class="grid-card"><p>Item</p></div>
+            <div class="grid-card"><p>Item</p></div>
+            <div class="grid-card"><p>Item</p></div>
+            <div class="grid-card"><p>Item</p></div>
+            <div class="grid-card"><p>Item</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="list-section">
+      <div class="wrapper">
+        <div class="content-block">
+          <div class="section-title"><p>Title</p></div>
+          <div class="item-wrapper">
+            <div class="list-card"><p>Item</p></div>
+            <div class="list-card"><p>Item</p></div>
+            <div class="list-card"><p>Item</p></div>
+            <div class="list-card"><p>Item</p></div>
+            <div class="list-card"><p>Item</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="highlight-section">
+      <div class="wrapper">
+        <div class="content-block">
+          <div class="section-title"><p style="font-family: 'Lora', serif;">Title</p></div>
+          <div class="item-wrapper">
+            <div class="highlight-card"><p>Item</p></div>
+            <div class="highlight-card"><p>Item</p></div>
+            <div class="highlight-card"><p>Item</p></div>
+            <div class="highlight-card"><p>Item</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-footer"><p>Footer</p></div>
+
+  </div>
+</body>
+</html>
